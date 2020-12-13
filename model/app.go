@@ -5,8 +5,8 @@ type AppConfig struct {
 	Key      string                `json:"key"`
 	Timezone string                `json:"timezone"`
 	Version  string                `json:"version"`
-	Session  SessionInfo           `json:"session"`
-	Notify   NotifyInfo            `json:"notify"`
+	Session  *SessionInfo           `json:"session"`
+	Notify   *NotifyInfo            `json:"notify"`
 	Tokens   map[string]*TokenInfo `json:"tokens"`
 }
 
