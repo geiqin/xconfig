@@ -1,7 +1,7 @@
 package client
 
 import (
-	"geiqin.client/model"
+	"github.com/geiqin/xconfig/model"
 	"github.com/micro/go-micro/v2/util/log"
 	"os"
 )
