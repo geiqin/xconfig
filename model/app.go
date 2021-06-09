@@ -1,13 +1,20 @@
 package model
 
 type AppConfig struct {
-	Name     string                `json:"name"`
-	Key      string                `json:"key"`
-	Timezone string                `json:"timezone"`
-	Version  string                `json:"version"`
-	Session  *SessionInfo          `json:"session"`
-	Notify   *NotifyInfo           `json:"notify"`
-	Token    *TokenInfo 		   `json:"token"`
+	Name     string       `json:"name"`
+	Key      string       `json:"key"`
+	Timezone string       `json:"timezone"`
+	Version  string       `json:"version"`
+	Cookie   *CookieInfo  `json:"cookie"`
+	Session  *SessionInfo `json:"session"`
+	Notify   *NotifyInfo  `json:"notify"`
+	Token    *TokenInfo   `json:"token"`
+}
+
+type CookieInfo struct {
+	Domain string `json:"domain"`
+	MaxAge int    `json:"max_age"`
+	Path   string `json:"path"`
 }
 
 type SessionInfo struct {
