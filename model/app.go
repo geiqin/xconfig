@@ -1,14 +1,16 @@
 package model
 
 type AppConfig struct {
-	Name     string       `json:"name"`
-	Key      string       `json:"key"`
-	Timezone string       `json:"timezone"`
-	Version  string       `json:"version"`
-	Cookie   *CookieInfo  `json:"cookie"`
-	Session  *SessionInfo `json:"session"`
-	Notify   *NotifyInfo  `json:"notify"`
-	Token    *TokenInfo   `json:"token"`
+	Name        string           `json:"name"`
+	Key         string           `json:"key"`
+	Timezone    string           `json:"timezone"`
+	Version     string           `json:"version"`
+	Cookie      *CookieInfo      `json:"cookie"`
+	Session     *SessionInfo     `json:"session"`
+	Notify      *NotifyInfo      `json:"notify"`
+	Token       *TokenInfo       `json:"token"`
+	DbPrefix    string           `json:"db_prefix"`
+	DbIncrement map[string]int64 `json:"db_increment"`
 }
 
 type CookieInfo struct {
