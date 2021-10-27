@@ -34,8 +34,10 @@ type NotifyInfo struct {
 }
 
 type TokenInfo struct {
-	Issuer     string `json:"issuer"`
-	Audience   string `json:"audience"`
-	PrivateKey []byte `json:"private_key"`
-	ExpireTime int    `json:"expire_time"`
+	AccessTokenExp    int    `json:"access_token_exp"`
+	RefreshTokenExp   int    `json:"refresh_token_exp"`
+	IsGenerateRefresh bool   `json:"is_generate_refresh"`
+	RedisAddr         string `json:"redis_addr"`
+	RedisDB           int    `json:"redis_db"`
+	PrivateKey        string `json:"private_key"`
 }
