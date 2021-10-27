@@ -34,8 +34,8 @@ type NotifyInfo struct {
 }
 
 type TokenInfo struct {
-	AccessTokenExp    int    `json:"access_token_exp"`
-	RefreshTokenExp   int    `json:"refresh_token_exp"`
+	AccessTokenExp    int64  `json:"access_token_exp"`
+	RefreshTokenExp   int64  `json:"refresh_token_exp"`
 	IsGenerateRefresh bool   `json:"is_generate_refresh"`
 	RedisAddr         string `json:"redis_addr"`
 	RedisDB           int    `json:"redis_db"`
