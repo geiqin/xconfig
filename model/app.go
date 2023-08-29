@@ -39,5 +39,6 @@ type TokenInfo struct {
 	IsGenerateRefresh bool   `json:"is_generate_refresh"`
 	RedisAddr         string `json:"redis_addr"`
 	RedisDB           int    `json:"redis_db"`
+	RedisPwd          string `json:"redis_pwd"`
 	PrivateKey        string `json:"private_key"`
 }
